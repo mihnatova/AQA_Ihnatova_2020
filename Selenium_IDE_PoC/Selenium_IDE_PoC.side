@@ -1,0 +1,1171 @@
+{
+  "id": "c895b627-493a-4bcd-ba8c-f8a5708df86d",
+  "version": "2.0",
+  "name": "Selenium_IDE_PoC",
+  "url": "https://www.drmartens.com/us/en/",
+  "tests": [{
+    "id": "1e15784e-c43f-403f-a960-4a2bf4fa5209",
+    "name": "Test case 1",
+    "commands": [{
+      "id": "129b6b0d-851c-4b8a-9e19-9a0fb5ff0bd3",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.drmartens.com/us/en/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f8078be6-8797-4764-acae-32fa4c8797fd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1162x680",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b68f03fa-5fb5-484b-b378-89f89bea0eee",
+      "comment": "",
+      "command": "click",
+      "target": "css=.show-sub > .yCmsComponent span",
+      "targets": [
+        ["css=.show-sub > .yCmsComponent span", "css:finder"],
+        ["xpath=//ul[@id='dm-primary-nav']/li[2]/span/a/span", "xpath:idRelative"],
+        ["xpath=//li[2]/span/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cbe47037-3b68-49b9-bce1-897cdd9eca14",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,4288)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e83d9bd6-e0bc-43c3-8678-d59cd22e28f3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.js-quickfilter:nth-child(3) > a",
+      "targets": [
+        ["css=.js-quickfilter:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'New Arrivals')]", "xpath:link"],
+        ["xpath=//main[@id='ae-main-content']/div[4]/div/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/us/en/womens/c/01000000?sort=relevance&categories=globalproductcatalog_us2dcategories_us2dwomens_us2dwomens2dnew2darrivals')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e7b1f761-1349-4cba-bcca-ff233a01d267",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,187)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7d466870-f2b3-41d1-a5aa-4e89d5d20c4c",
+      "comment": "",
+      "command": "click",
+      "target": "css=#img-26262001 > .product__list__item__product-img",
+      "targets": [
+        ["css=#img-26262001 > .product__list__item__product-img", "css:finder"],
+        ["xpath=//a[@id='img-26262001']/div", "xpath:idRelative"],
+        ["xpath=//div[21]/div/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c202b6f3-b311-4d5a-9dbd-939bd3882500",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "name=/p/26262001",
+      "targets": [
+        ["name=/p/26262001", "name"],
+        ["css=.colorVariant", "css:finder"],
+        ["xpath=//a[@name='/p/26262001']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/us/en/p/26262001')]", "xpath:href"],
+        ["xpath=//div[4]/div/div/div/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "917ef0a5-23ed-4e21-9106-abd941ce0dc7",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "name=/p/26262001",
+      "targets": [
+        ["name=/p/26262001", "name"],
+        ["css=.colorVariant", "css:finder"],
+        ["xpath=//a[@name='/p/26262001']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/us/en/p/26262001')]", "xpath:href"],
+        ["xpath=//div[4]/div/div/div/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3829fa41-b585-4f40-80e9-3adc5bac0c80",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,152)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c06bb9bd-f637-4b24-96d1-9f574ee23478",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=6",
+      "targets": [
+        ["linkText=6", "linkText"],
+        ["css=li:nth-child(2) > .stock-inStock", "css:finder"],
+        ["xpath=//ul[@id='sizeSelector']/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0);')])[2]", "xpath:href"],
+        ["xpath=//div[3]/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "62bb87e7-ad85-4fd7-ac9a-23a4ce6491a7",
+      "comment": "",
+      "command": "click",
+      "target": "id=addToCartButton",
+      "targets": [
+        ["id=addToCartButton", "id"],
+        ["css=#addToCartButton", "css:finder"],
+        ["xpath=//button[@id='addToCartButton']", "xpath:attributes"],
+        ["xpath=//form[@id='addToCartForm']/button[2]", "xpath:idRelative"],
+        ["xpath=//form[2]/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a776b765-dc01-4a94-9cc0-b2f68880ac28",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,590)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7b26362a-ad3e-4566-a7f7-d3690cc44162",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn__border-primary",
+      "targets": [
+        ["css=.btn__border-primary", "css:finder"],
+        ["xpath=(//a[contains(text(),'Checkout')])[2]", "xpath:link"],
+        ["xpath=//div[@id='addToCartLayer']/div[3]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/us/en/cart')])[3]", "xpath:href"],
+        ["xpath=//div[7]/div/div[2]/div[2]/div/div/div/div[3]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c2da30f6-3440-483d-9370-b943a1586db3",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,331)",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "52b94fc1-fe00-48c6-bb98-9b3cb990532c",
+    "name": "Test case 2",
+    "commands": [{
+      "id": "8febe644-6715-46d6-8a5b-f3894c3093e7",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.drmartens.com/us/en/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8c28e954-8529-45ae-a39d-91fdf9816397",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1269x680",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "95e7b72a-d6dd-440f-93e8-a9dac0d02559",
+      "comment": "",
+      "command": "click",
+      "target": "css=.show-sub > .yCmsComponent span",
+      "targets": [
+        ["css=.show-sub > .yCmsComponent span", "css:finder"],
+        ["xpath=//ul[@id='dm-primary-nav']/li[2]/span/a/span", "xpath:idRelative"],
+        ["xpath=//li[2]/span/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e443a188-b0ad-47fc-8a70-fe09718ee5eb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.facet__item:nth-child(1) > .facet__title > span",
+      "targets": [
+        ["css=.facet__item:nth-child(1) > .facet__title > span", "css:finder"],
+        ["xpath=//div[@id='facet-list']/div/ul/li/a/span", "xpath:idRelative"],
+        ["xpath=//div/div/div/ul/li/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "16fe4ce8-d05f-4554-9ee0-5175e37f45ef",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.facet__item:nth-child(1) > .facet__title > span",
+      "targets": [
+        ["css=.facet__item:nth-child(1) > .facet__title > span", "css:finder"],
+        ["xpath=//div[@id='facet-list']/div/ul/li/a/span", "xpath:idRelative"],
+        ["xpath=//div/div/div/ul/li/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0c4b0c80-0374-4de0-9e46-f42b4aebe4df",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.\\_facet-active > .facet__title > span",
+      "targets": [
+        ["css=.\\_facet-active > .facet__title > span", "css:finder"],
+        ["xpath=//div[@id='facet-list']/div/ul/li/a/span", "xpath:idRelative"],
+        ["xpath=//div/div/div/ul/li/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0360df20-518d-4bc8-9b9a-fa709c401a0a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=6 (341)",
+      "targets": [
+        ["linkText=6 (341)", "linkText"],
+        ["css=.\\_facet-active .col-sm-6:nth-child(2) > .facet__label__item", "css:finder"],
+        ["xpath=//div[@id='facet-list']/div/ul/li/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '?sort=relevancesize_w_usa=size_6')]", "xpath:href"],
+        ["xpath=//li/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'6 (341)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1fef33a7-ee55-4e56-96c0-56170ceb1b8e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.facet__item:nth-child(1) .facet__btn--black",
+      "targets": [
+        ["css=.facet__item:nth-child(1) .facet__btn--black", "css:finder"],
+        ["xpath=//div[@id='facet-list']/div/ul/li/div/div[2]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b2d6e8ee-4357-42eb-a849-b125f8e46569",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,114)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5f62e57b-9ce7-49f7-b17c-84b361457fab",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#img-26519001 > .product__list__item__product-img",
+      "targets": [
+        ["css=#img-26519001 > .product__list__item__product-img", "css:finder"],
+        ["xpath=//a[@id='img-26519001']/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "46f9b5f6-40b6-4627-80a9-f8392925ed71",
+      "comment": "",
+      "command": "click",
+      "target": "css=#img-26519001 > .product__list__item__product-img",
+      "targets": [
+        ["css=#img-26519001 > .product__list__item__product-img", "css:finder"],
+        ["xpath=//a[@id='img-26519001']/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f9f57ee9-313e-4310-8098-21f4bae3ca9e",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=6",
+      "targets": [
+        ["linkText=6", "linkText"],
+        ["css=#tabSize_FEMALE li:nth-child(2) > .stock-inStock", "css:finder"],
+        ["xpath=(//ul[@id='sizeSelector']/li[2]/a)[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0);')])[15]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c5696c0d-9b67-4efe-a797-67fea94fb07f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=6",
+      "targets": [
+        ["linkText=6", "linkText"],
+        ["css=#tabSize_FEMALE li:nth-child(2) > .stock-inStock", "css:finder"],
+        ["xpath=(//ul[@id='sizeSelector']/li[2]/a)[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0);')])[15]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "88c82c3b-b3cd-45c4-bf06-d521bbe4532d",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.selected > .stock-inStock",
+      "targets": [
+        ["css=.selected > .stock-inStock", "css:finder"],
+        ["xpath=(//ul[@id='sizeSelector']/li[2]/a)[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0);')])[15]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b4cb5c5-fb10-48f0-a092-081d7ad16b06",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,247)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a9a7e79d-8d40-42ba-a428-62d52ed688ba",
+      "comment": "",
+      "command": "click",
+      "target": "id=addToCartButton",
+      "targets": [
+        ["id=addToCartButton", "id"],
+        ["css=#addToCartButton", "css:finder"],
+        ["xpath=//button[@id='addToCartButton']", "xpath:attributes"],
+        ["xpath=//form[@id='addToCartForm']/button[2]", "xpath:idRelative"],
+        ["xpath=//form[2]/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2fa34c67-56cc-44cb-82e1-a05c81a8142d",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.btn__border-primary",
+      "targets": [
+        ["css=.btn__border-primary", "css:finder"],
+        ["xpath=(//a[contains(text(),'Checkout')])[2]", "xpath:link"],
+        ["xpath=//div[@id='addToCartLayer']/div[3]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/us/en/cart')])[3]", "xpath:href"],
+        ["xpath=//div[7]/div/div[2]/div[2]/div/div/div/div[3]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c3160842-4141-4a14-8821-364ff1c91724",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn__border-primary",
+      "targets": [
+        ["css=.btn__border-primary", "css:finder"],
+        ["xpath=(//a[contains(text(),'Checkout')])[2]", "xpath:link"],
+        ["xpath=//div[@id='addToCartLayer']/div[3]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/us/en/cart')])[3]", "xpath:href"],
+        ["xpath=//div[7]/div/div[2]/div[2]/div/div/div/div[3]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "79c26aab-3010-438a-9f71-324859dfaff9",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,66)",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "2ae65b84-70f1-4d7d-8d67-7fee06e63b28",
+    "name": "Test case 3",
+    "commands": [{
+      "id": "7d0fb464-e2c7-42a9-82c4-422b8ce6f6a2",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.drmartens.com/us/en/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1583ce23-f65d-4a9e-83a4-daf4c852cc91",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1269x680",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f5f7c90b-c199-42d9-9d27-93f44a5def3d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.show-sub > .yCmsComponent span",
+      "targets": [
+        ["css=.show-sub > .yCmsComponent span", "css:finder"],
+        ["xpath=//ul[@id='dm-primary-nav']/li[8]/span/a/span", "xpath:idRelative"],
+        ["xpath=//li[8]/span/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f13546ad-ae13-47ac-ae5b-56e4ea999011",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.auto:nth-child(8) > .yCmsComponent span",
+      "targets": [
+        ["css=.auto:nth-child(8) > .yCmsComponent span", "css:finder"],
+        ["xpath=//ul[@id='dm-primary-nav']/li[8]/span/a/span", "xpath:idRelative"],
+        ["xpath=//li[8]/span/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f53409ab-7a13-41d0-8ffd-2c976032ffc6",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,676)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dd364b4c-1622-417a-a8cc-37938b8a4203",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-left > .col-xs-4:nth-child(3) > .bl-overlay > .g-link",
+      "targets": [
+        ["css=.text-left > .col-xs-4:nth-child(3) > .bl-overlay > .g-link", "css:finder"],
+        ["xpath=(//a[contains(text(),'eGift Cards >')])[2]", "xpath:link"],
+        ["xpath=//main[@id='ae-main-content']/div[3]/div/div/div/div[12]/div[3]/h3/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.drmartens.com/us/en/p/egift-cards')])[6]", "xpath:href"],
+        ["xpath=//div[12]/div[3]/h3/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8fb5c67e-665d-4685-bf50-22f02fe1cecb",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=$100.00",
+      "targets": [
+        ["linkText=$100.00", "linkText"],
+        ["css=li:nth-child(4) > .colorVariant", "css:finder"],
+        ["xpath=//main[@id='ae-main-content']/div[2]/div/div[2]/div/div/div/div/div/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/us/en/p/GFCRD100')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'$100.00')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ed1f516-d9ae-4776-9a17-153c1247b5d5",
+      "comment": "",
+      "command": "click",
+      "target": "id=sender_email",
+      "targets": [
+        ["id=sender_email", "id"],
+        ["name=sender_email", "name"],
+        ["css=#sender_email", "css:finder"],
+        ["xpath=//input[@id='sender_email']", "xpath:attributes"],
+        ["xpath=//form[@id='giftcard-form']/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b7591fc6-f938-4023-926f-7eb9e6809d3e",
+      "comment": "",
+      "command": "type",
+      "target": "id=sender_email",
+      "targets": [
+        ["id=sender_email", "id"],
+        ["name=sender_email", "name"],
+        ["css=#sender_email", "css:finder"],
+        ["xpath=//input[@id='sender_email']", "xpath:attributes"],
+        ["xpath=//form[@id='giftcard-form']/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/input", "xpath:position"]
+      ],
+      "value": "email@gmail.com"
+    }, {
+      "id": "db328689-5acf-4425-999a-c66fbaeda242",
+      "comment": "",
+      "command": "click",
+      "target": "id=recipient_name",
+      "targets": [
+        ["id=recipient_name", "id"],
+        ["name=recipient_name", "name"],
+        ["css=#recipient_name", "css:finder"],
+        ["xpath=//input[@id='recipient_name']", "xpath:attributes"],
+        ["xpath=//form[@id='giftcard-form']/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ada4a105-a630-4e6d-b73d-9087d0d2d029",
+      "comment": "",
+      "command": "type",
+      "target": "id=recipient_name",
+      "targets": [
+        ["id=recipient_name", "id"],
+        ["name=recipient_name", "name"],
+        ["css=#recipient_name", "css:finder"],
+        ["xpath=//input[@id='recipient_name']", "xpath:attributes"],
+        ["xpath=//form[@id='giftcard-form']/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Mariia"
+    }, {
+      "id": "a9cb6c36-2e22-4512-be81-b771a7a2180e",
+      "comment": "",
+      "command": "click",
+      "target": "id=recipient_email",
+      "targets": [
+        ["id=recipient_email", "id"],
+        ["name=recipient_email", "name"],
+        ["css=#recipient_email", "css:finder"],
+        ["xpath=//input[@id='recipient_email']", "xpath:attributes"],
+        ["xpath=//form[@id='giftcard-form']/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d207896b-ac11-4000-a6ba-4d6bed7a091e",
+      "comment": "",
+      "command": "type",
+      "target": "id=recipient_email",
+      "targets": [
+        ["id=recipient_email", "id"],
+        ["name=recipient_email", "name"],
+        ["css=#recipient_email", "css:finder"],
+        ["xpath=//input[@id='recipient_email']", "xpath:attributes"],
+        ["xpath=//form[@id='giftcard-form']/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "email_2@gmail.com"
+    }, {
+      "id": "fd4ce43c-bb42-46c5-a882-9291846bb7f9",
+      "comment": "",
+      "command": "click",
+      "target": "id=confirm_recipient_email",
+      "targets": [
+        ["id=confirm_recipient_email", "id"],
+        ["name=confirm_recipient_email", "name"],
+        ["css=#confirm_recipient_email", "css:finder"],
+        ["xpath=//input[@id='confirm_recipient_email']", "xpath:attributes"],
+        ["xpath=//form[@id='giftcard-form']/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6670428d-4440-40b5-a301-7ba915fc534d",
+      "comment": "",
+      "command": "type",
+      "target": "id=confirm_recipient_email",
+      "targets": [
+        ["id=confirm_recipient_email", "id"],
+        ["name=confirm_recipient_email", "name"],
+        ["css=#confirm_recipient_email", "css:finder"],
+        ["xpath=//input[@id='confirm_recipient_email']", "xpath:attributes"],
+        ["xpath=//form[@id='giftcard-form']/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "email_2@gmail.com"
+    }, {
+      "id": "b58c2866-cc1b-4482-94db-667812a8ade9",
+      "comment": "",
+      "command": "click",
+      "target": "id=addToCartButton",
+      "targets": [
+        ["id=addToCartButton", "id"],
+        ["css=#addToCartButton", "css:finder"],
+        ["xpath=//button[@id='addToCartButton']", "xpath:attributes"],
+        ["xpath=//form[@id='addToCartForm']/button[2]", "xpath:idRelative"],
+        ["xpath=//form/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "87e1d5fa-c803-4460-8dd0-d9ec07768454",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,362)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b91a4dcc-23a6-4f5e-b273-efc627983e69",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.btn__border-primary",
+      "targets": [
+        ["css=.btn__border-primary", "css:finder"],
+        ["xpath=(//a[contains(text(),'Checkout')])[2]", "xpath:link"],
+        ["xpath=//div[@id='addToCartLayer']/div[3]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/us/en/cart')])[3]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/div[3]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dbde3c10-686d-4e64-99c6-f2f1911d63aa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn__border-primary",
+      "targets": [
+        ["css=.btn__border-primary", "css:finder"],
+        ["xpath=(//a[contains(text(),'Checkout')])[2]", "xpath:link"],
+        ["xpath=//div[@id='addToCartLayer']/div[3]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/us/en/cart')])[3]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/div[3]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8bc7b099-8364-4ae0-acbc-f625e3d59011",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,70)",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "205db901-e3d5-4204-aade-86748cc98174",
+    "name": "Test case 4",
+    "commands": [{
+      "id": "53f02f62-375b-4c47-9859-e38f61947aad",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.drmartens.com/us/en/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a8de4392-6835-447b-996c-63d38813be92",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1269x680",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "79e99e46-1243-41ba-a21f-321e14875588",
+      "comment": "",
+      "command": "click",
+      "target": "css=.show-sub > .yCmsComponent span",
+      "targets": [
+        ["css=.show-sub > .yCmsComponent span", "css:finder"],
+        ["xpath=//ul[@id='dm-primary-nav']/li/span/a/span", "xpath:idRelative"],
+        ["xpath=//span/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fb8b289d-c605-4a47-b98c-7fcf1c485552",
+      "comment": "",
+      "command": "click",
+      "target": "css=.js-quickfilter:nth-child(2) > a",
+      "targets": [
+        ["css=.js-quickfilter:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Platforms')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/us/en/unisex/new-arrivals/c/04150000?sort=relevance&categories=globalproductcatalog_us2dcategories_us2dunisex_us2dunisex2dplatforms')]", "xpath:href"],
+        ["xpath=//div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "77c089fb-d8de-4a9c-9f56-fbdcf9c84604",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.facet__item:nth-child(4) > .facet__title > span",
+      "targets": [
+        ["css=.facet__item:nth-child(4) > .facet__title > span", "css:finder"],
+        ["xpath=//div[@id='facet-list']/div/ul/li[4]/a/span", "xpath:idRelative"],
+        ["xpath=//div/div/ul/li[4]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a091dd2f-f993-44d8-8324-116bf164e17d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.facet__item:nth-child(4) > .facet__title > span",
+      "targets": [
+        ["css=.facet__item:nth-child(4) > .facet__title > span", "css:finder"],
+        ["xpath=//div[@id='facet-list']/div/ul/li[4]/a/span", "xpath:idRelative"],
+        ["xpath=//div/div/ul/li[4]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "42f7a1f4-eb0f-4389-8658-2c60a9dda32f",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.\\_facet-active > .facet__title > span",
+      "targets": [
+        ["css=.\\_facet-active > .facet__title > span", "css:finder"],
+        ["xpath=//div[@id='facet-list']/div/ul/li[4]/a/span", "xpath:idRelative"],
+        ["xpath=//div/div/ul/li[4]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "52e2d5c6-8889-4912-a4df-d880816fda6a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.\\_facet-active .col-sm-6:nth-child(1) > .facet__label__item",
+      "targets": [
+        ["css=.\\_facet-active .col-sm-6:nth-child(1) > .facet__label__item", "css:finder"],
+        ["xpath=//div[@id='facet-list']/div/ul/li[4]/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '?sort=relevance&categories=globalproductcatalog_us2dcategories_us2dunisex_us2dunisex2dplatforms&product_collection=vegan;vegano')]", "xpath:href"],
+        ["xpath=//li[4]/div/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5711b574-342f-4649-8f1f-505efbcc528d",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.\\_facet-active .col-sm-6:nth-child(1) > .facet__label__item",
+      "targets": [
+        ["css=.\\_facet-active .col-sm-6:nth-child(1) > .facet__label__item", "css:finder"],
+        ["xpath=//div[@id='facet-list']/div/ul/li[4]/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '?sort=relevance&categories=globalproductcatalog_us2dcategories_us2dunisex_us2dunisex2dplatforms&product_collection=vegan;vegano')]", "xpath:href"],
+        ["xpath=//li[4]/div/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1eaae58e-7de6-4cfe-8f5b-b52e0ae89747",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.col-sm-6 > .\\_select",
+      "targets": [
+        ["css=.col-sm-6 > .\\_select", "css:finder"],
+        ["xpath=//div[@id='facet-list']/div/ul/li[4]/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '?sort=relevance&categories=globalproductcatalog_us2dcategories_us2dunisex_us2dunisex2dplatforms&product_collection=vegan;vegano')]", "xpath:href"],
+        ["xpath=//li[4]/div/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "df360a16-a0e5-49a7-9885-6dd3119ae13f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.facet__item:nth-child(4) .facet__btn--black",
+      "targets": [
+        ["css=.facet__item:nth-child(4) .facet__btn--black", "css:finder"],
+        ["xpath=//div[@id='facet-list']/div/ul/li[4]/div/div[2]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//li[4]/div/div[2]/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d57fa960-2f77-4d99-84a4-3029d3f10a45",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,178)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8a93f02b-39f8-4a13-92e6-4cf171e60fc5",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,332)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "78480f5f-9aa9-476b-a2de-b7bc3874a781",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,286)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c34ed64b-177c-4c2c-bea2-efa679fd8e51",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,182)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "50f5c211-41de-4206-bfda-4603a7a203e5",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,208)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7723182a-e15d-4163-acc2-02bdf4154ded",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-times",
+      "targets": [
+        ["css=.fa-times", "css:finder"],
+        ["xpath=//div[@id='facet-filter']/div/div/span", "xpath:idRelative"],
+        ["xpath=//div[7]/div/div[2]/div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Remove item.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8108b407-c973-44b8-b116-c81f038d556e",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,172)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eb0f9d0b-4a01-4151-96a4-eb41359089af",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,254)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b8f90357-1acd-49ae-97d4-831ee78de510",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,241)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4d83fac0-468e-4ab4-951f-a8aa99743ac3",
+      "comment": "",
+      "command": "click",
+      "target": "css=#img-26611001 > .product__list__item__product-img",
+      "targets": [
+        ["css=#img-26611001 > .product__list__item__product-img", "css:finder"],
+        ["xpath=//a[@id='img-26611001']/div", "xpath:idRelative"],
+        ["xpath=//div[9]/div/div/div[2]/div/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e5a7bc27-84b6-4234-ae0d-4d17cc33ee61",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,178)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5491d7b4-83ed-48cf-bf65-4b75549c09d4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=6",
+      "targets": [
+        ["linkText=6", "linkText"],
+        ["css=#tabSize_FEMALE li:nth-child(2) > .stock-inStock", "css:finder"],
+        ["xpath=(//ul[@id='sizeSelector']/li[2]/a)[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0);')])[15]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "23aa1071-5517-4157-a096-ebf2a21d6374",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,208)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4f0bf46a-336c-4d62-bc6d-399d375e0856",
+      "comment": "",
+      "command": "click",
+      "target": "id=addToCartButton",
+      "targets": [
+        ["id=addToCartButton", "id"],
+        ["css=#addToCartButton", "css:finder"],
+        ["xpath=//button[@id='addToCartButton']", "xpath:attributes"],
+        ["xpath=//form[@id='addToCartForm']/button[2]", "xpath:idRelative"],
+        ["xpath=//form[2]/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ef6feb4b-74b5-4ffa-9348-627699ecd5a5",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,398)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c28b9f1e-a517-49de-a7dd-daa5f442337a",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,482)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ccd1e1a6-4755-47dc-88db-f32c50325069",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn__border-primary",
+      "targets": [
+        ["css=.btn__border-primary", "css:finder"],
+        ["xpath=(//a[contains(text(),'Checkout')])[2]", "xpath:link"],
+        ["xpath=//div[@id='addToCartLayer']/div[3]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/us/en/cart')])[3]", "xpath:href"],
+        ["xpath=//div[7]/div/div[2]/div[2]/div/div/div/div[3]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "888ad1f2-b5c6-40c5-875f-ce3379671fb0",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ea7dda15-c203-4324-a1fb-258e8cb7b2a6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.show-sub > .yCmsComponent span",
+      "targets": [
+        ["css=.show-sub > .yCmsComponent span", "css:finder"],
+        ["xpath=//ul[@id='dm-primary-nav']/li/span/a/span", "xpath:idRelative"],
+        ["xpath=//span/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "56bb6e24-81f7-4452-b0fc-0fbd59b4c7ce",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,275)",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "3c588cb2-c766-44e3-ba33-300c65cfe372",
+    "name": "Test case 5",
+    "commands": [{
+      "id": "48cd4cf0-2911-4f25-8964-38f5968b093d",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.drmartens.com/us/en/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a6f5f6db-364d-4f5b-b018-6db3e7f8b79f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1269x680",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ddb73d69-ff6d-4d8e-931a-59fa457a4816",
+      "comment": "",
+      "command": "click",
+      "target": "css=.show-sub > .yCmsComponent span",
+      "targets": [
+        ["css=.show-sub > .yCmsComponent span", "css:finder"],
+        ["xpath=//ul[@id='dm-primary-nav']/li[6]/span/a/span", "xpath:idRelative"],
+        ["xpath=//li[6]/span/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "702a831d-4805-470b-a0f5-39daf4ddf224",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,766)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6b7a761b-f5e2-4d60-a304-594784d34c55",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=POLLEY WOMEN'S SLIP RESISTANT MARY JANE SHOES",
+      "targets": [
+        ["linkText=POLLEY WOMEN'S SLIP RESISTANT MARY JANE SHOES", "linkText"],
+        ["css=.product-item-25623001 .product__list__item__name", "css:finder"],
+        ["xpath=//div[@id='product-list']/div[10]/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/us/en/p/25623001')])[2]", "xpath:href"],
+        ["xpath=//div[10]/div/div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "527f100d-5fcd-4d65-a239-e25898675fcb",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,252)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a4c708ad-3146-45e1-ab05-d3fedeacc040",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(2) > .stock-inStock",
+      "targets": [
+        ["css=li:nth-child(2) > .stock-inStock", "css:finder"],
+        ["xpath=//ul[@id='sizeSelector']/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0);')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c1155d35-129a-456f-a1b6-1ad1cba13ba6",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,357)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "88143bfd-101a-4db1-a2a9-b67a5ce738c5",
+      "comment": "",
+      "command": "click",
+      "target": "id=addToCartButton",
+      "targets": [
+        ["id=addToCartButton", "id"],
+        ["css=#addToCartButton", "css:finder"],
+        ["xpath=//button[@id='addToCartButton']", "xpath:attributes"],
+        ["xpath=//form[@id='addToCartForm']/button[2]", "xpath:idRelative"],
+        ["xpath=//form[2]/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3de1ee1c-8e47-4d93-a337-e5d6410f6908",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,495)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bc0871cb-e587-4ff6-987a-2ef96ac60340",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,586)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "784bd0a6-7245-441d-bdcb-f533db8db2f1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-secondary",
+      "targets": [
+        ["css=.btn-secondary", "css:finder"],
+        ["xpath=//a[contains(text(),'Continue Shopping')]", "xpath:link"],
+        ["xpath=//div[@id='addToCartLayer']/div[3]/div[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/us/en/cart')])[4]", "xpath:href"],
+        ["xpath=//div[3]/div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6f796ebf-dbed-4ea1-86d5-428c08876eba",
+      "comment": "",
+      "command": "click",
+      "target": "css=.show-sub > .yCmsComponent span",
+      "targets": [
+        ["css=.show-sub > .yCmsComponent span", "css:finder"],
+        ["xpath=//ul[@id='dm-primary-nav']/li[4]/span/a/span", "xpath:idRelative"],
+        ["xpath=//li[4]/span/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aa9468f1-fc87-4ae8-b16c-35ba312ff7c1",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,363)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f39cd5dd-f1db-4a97-8146-0684555044a3",
+      "comment": "",
+      "command": "click",
+      "target": "css=#img-26196001 > .product__list__item__product-img",
+      "targets": [
+        ["css=#img-26196001 > .product__list__item__product-img", "css:finder"],
+        ["xpath=//a[@id='img-26196001']/div", "xpath:idRelative"],
+        ["xpath=//div[9]/div/div/div[2]/div/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5742563e-73fc-427f-9eef-916e5017d3b5",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,179)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "91d3793e-fccf-45ce-b242-1954b238b28a",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,304)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ed5b65ae-e1d4-47ed-8751-b588ebde2bfd",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=7",
+      "targets": [
+        ["linkText=7", "linkText"],
+        ["css=li:nth-child(1) > .stock-inStock", "css:finder"],
+        ["xpath=//ul[@id='sizeSelector']/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:void(0);')]", "xpath:href"],
+        ["xpath=//div[3]/div/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "870a18cf-95c0-45f6-b448-1c83b3bdea2b",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(1) > .stock-inStock",
+      "targets": [
+        ["css=li:nth-child(1) > .stock-inStock", "css:finder"],
+        ["xpath=//ul[@id='sizeSelector']/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:void(0);')]", "xpath:href"],
+        ["xpath=//div[3]/div/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8d1268a9-ad90-4e72-9295-166fa7276ed8",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.selected > .stock-inStock",
+      "targets": [
+        ["css=.selected > .stock-inStock", "css:finder"],
+        ["xpath=//ul[@id='sizeSelector']/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:void(0);')]", "xpath:href"],
+        ["xpath=//div[3]/div/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bb66cd0e-276d-4ca2-8142-b37bf34ab00c",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,365)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "38aebf27-4e31-44c8-aee5-0ade6961d7df",
+      "comment": "",
+      "command": "click",
+      "target": "id=addToCartButton",
+      "targets": [
+        ["id=addToCartButton", "id"],
+        ["css=#addToCartButton", "css:finder"],
+        ["xpath=//button[@id='addToCartButton']", "xpath:attributes"],
+        ["xpath=//form[@id='addToCartForm']/button[2]", "xpath:idRelative"],
+        ["xpath=//form[2]/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "299b6497-f306-4394-8f44-ad3f04cae880",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,505)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "23247e7e-5305-4ef9-894d-8cb9b5c2a637",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn__border-primary",
+      "targets": [
+        ["css=.btn__border-primary", "css:finder"],
+        ["xpath=(//a[contains(text(),'Checkout')])[2]", "xpath:link"],
+        ["xpath=//div[@id='addToCartLayer']/div[3]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/us/en/cart')])[3]", "xpath:href"],
+        ["xpath=//div[7]/div/div[2]/div[2]/div/div/div/div[3]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "46ed0c1b-58de-4b87-8d6e-94abbfd28dd7",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,214)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5ff55303-52c4-4b79-93f6-be360443b429",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,377)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2d8b94d4-3236-467a-9ce2-4c369e6f7bbe",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,128)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "de684e82-e6b5-4d2c-88ea-6df4eee913c3",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,31)",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "d04e7435-26e6-4f28-ab5a-2de82760ce5b",
+    "name": "Practical_Task",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["1e15784e-c43f-403f-a960-4a2bf4fa5209", "52b94fc1-fe00-48c6-bb98-9b3cb990532c", "2ae65b84-70f1-4d7d-8d67-7fee06e63b28", "205db901-e3d5-4204-aade-86748cc98174", "3c588cb2-c766-44e3-ba33-300c65cfe372"]
+  }],
+  "urls": ["https://www.drmartens.com/", "https://www.amazon.com/", "https://www.drmartens.com/us/en/", "https://www.drmartens.com/us/en/cart"],
+  "plugins": []
+}
