@@ -1,0 +1,80 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2576
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica-Bold;\f1\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b\fs24 \cf0 Test case 1
+\f1\b0 \
+1. The user goes to web-site https://www.drmartens.com/us/en/  \
+2. The user navigates on \'93New\'94 button. //ul[@id='dm-primary-nav']/li/span/a/span[contains(text(),'NEW')] | //a[@href='/us/en/unisex/new-arrivals/c/04150000']/child::span \
+3. The user clicks on \'93Women\'94 button. //ul[@id='dm-primary-nav']/li/span/a/span[contains(text(),'WOMEN')] | //a[@href='/us/en/womens/c/01000000']/child::span\
+4. The user scrolls down and clicks on \'931460 PATENT LEATHER CROCODILE PRINT BOOTS\'94. //a[@title='1460 PATENT LEATHER CROCODILE PRINT BOOTS'] | //a[@id='img-26262001']\
+5. The user clicks on \'935\'94 button to select size. //a[@data-sku-code='190665351323'] \
+6. The user clicks \'93Add to bag\'94 button. //button[@id='addToCartButton'] \
+7. The user clicks \'93Checkout\'94. //a[@class='btn btn-primary btn__border-primary btn-block mini-cart-checkout-button add-to-cart-button']\
+8. The user gets to the page for arranging further purchase. \
+\
+
+\f0\b Test case 2
+\f1\b0 \
+1. The user goes to web-site https://www.drmartens.com/us/en/ \
+2. The user clicks on \'93Women\'94 button. //ul[@id='dm-primary-nav']/li/span/a/span[contains(text(),'WOMEN')] | //a[@href='/us/en/womens/c/01000000']/child::span\
+3. The user clicks on \'93+ Women size\'94 button. //span[contains(text(),'Women Size')]\
+4. The user selects size 6. //a[@data-code='size_6'] | //a[@data-query='size_w_usa=size_6']\
+5. The user clicks on \'93Apply\'94 button. \
+6. The user clicks on \'931460 GREASY LEATHER LACE UP BOOTS\'94. //a[@title='1460 GREASY LEATHER LACE UP BOOTS'] | //a[@id='img-11822003']\
+7. The user clicks on \'936\'94 button to select size. //a[@data-sku-code='800090829136']\
+8. The user clicks \'93Add to bag\'94 button. //button[@id='addToCartButton'] \
+9. The user clicks \'93Checkout\'94. //a[@class='btn btn-primary btn__border-primary btn-block mini-cart-checkout-button add-to-cart-button']\
+10. The user gets to the page for arranging further purchase. \
+\
+
+\f0\b Test case 3
+\f1\b0 \
+1. The user goes to web-site https://www.drmartens.com/us/en/ \
+2. The user clicks on \'93Gifts\'94 button. //ul[@id='dm-primary-nav']/li/span/a/span[contains(text(),'GIFTS')] | //a[@href='/us/en/gift-guide']/child::span\
+3. The user scrolls down and clicks on \'93EGIFT CARDS >\'94 button. \
+4. The user selects the $100.00 card nominal. //a[@href='/us/en/p/GFCRD100']\
+5. The user enters Sender Email - email@gmail.com. //input[@id='sender_email']\
+6. The user enters Sender Name - Mariia. //input[@name='recipient_name']\
+7. The user enters Recipient Email - email_2@gmail.com. //input[@id='recipient_email']\
+8. The user enters Confirm Recipient Email - email_2@gmail.com. //input[@name='confirm_recipient_email']\
+9. The user clicks \'93Add to bag\'94 button. //button[@id='addToCartButton'] \
+10. The user clicks \'93Checkout\'94. //a[@class='btn btn-primary btn__border-primary btn-block mini-cart-checkout-button add-to-cart-button']\
+11. The user gets to the page for arranging further purchase. \
+\
+
+\f0\b Test case 4
+\f1\b0 \
+1. The user goes to web-site https://www.drmartens.com/us/en/ \
+2. The user clicks on \'93New\'94 button. //ul[@id='dm-primary-nav']/li/span/a/span[contains(text(),'NEW')] | //a[@href='/us/en/unisex/new-arrivals/c/04150000']/child::span \
+3. The user clicks on \'93+ Product collection\'94 button. //span[contains(text(),'Product Collection')]\
+4. The user selects Vegan. //a[@data-code='vegan;vegano'] | //a[@data-query='product_collection=vegan;vegano']\
+5. The user clicks on \'93Apply\'94 button.\
+6. The user clicks on button to remove Vegan. //a[@data-code='vegan;vegano'] | //a[@data-query='product_collection=vegan;vegano']\
+7. The user clicks on \'931460 SERENA FAUX FUR LINED LACE UP BOOTS\'94. //a[@id='img-26238021']\
+8. The user clicks on \'936\'94 button to select size. //a[@data-sku-code='190665351491']\
+9. The user clicks \'93Add to bag\'94 button. //button[@id='addToCartButton'] \
+10. The user clicks \'93Checkout\'94. //a[@class='btn btn-primary btn__border-primary btn-block mini-cart-checkout-button add-to-cart-button']\
+11. The user clicks on \'93New\'94 button. //ul[@id='dm-primary-nav']/li/span/a/span[contains(text(),'NEW')] | //a[@href='/us/en/unisex/new-arrivals/c/04150000']/child::span \
+12. The user is transferred to the page with new goods arrivals.\
+\
+
+\f0\b Test case 5 
+\f1\b0 \
+1. The user goes to web-site https://www.drmartens.com/us/en/ \
+2. The user clicks on \'93Work Boots\'94 button. //span[contains(text(),'WORK BOOTS')] | //a[@href='/us/en/work/c/05000000']/child::span\
+3. The user selects and clicks on \'931460 SLIP RESISTANT LEATHER LACE UP BOOTS\'94. //a[@title=\'911460 SLIP RESISTANT LEATHER LACE UP BOOTS\'92] | //a[@id='img-24382001']\
+4. The user clicks on \'936\'94 button to select size. //a[@data-sku-code='190665198713']\
+5. The user clicks \'93Add to bag\'94 button. //button[@id='addToCartButton'] \
+6. The user clicks \'93Continue shopping\'94 button. //a[@class='btn btn-secondary btn-block js-mini-cart-close-button']\
+7. The user clicks on \'93Kids\'94 button. //span[contains(text(),'KIDS')] | //a[@href='/us/en/kids/c/03000000']/child::span\
+8. The user selects and clicks on \'93TODDLER 1460 PASCAL METALLIC BOOTS\'94. //a[@title='TODDLER 1460 PASCAL METALLIC BOOTS'] | //a[@id='img-26196001']\
+9. The user clicks on \'937\'94 button to select size. //a[@data-sku-code='190665361339']\
+10. The user clicks \'93Add to bag\'94 button. //button[@id='addToCartButton'] \
+11. The user clicks \'93Checkout\'94. //a[@class='btn btn-primary btn__border-primary btn-block mini-cart-checkout-button add-to-cart-button']\
+12. The user gets to the page for arranging further purchase. \
+\
+}
