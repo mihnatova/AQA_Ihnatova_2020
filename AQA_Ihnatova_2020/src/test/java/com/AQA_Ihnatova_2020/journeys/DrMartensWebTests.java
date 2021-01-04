@@ -18,9 +18,9 @@ public class DrMartensWebTests extends BaseTest {
     private WorkBootsSectionPage workBootsSectionPage;
 
 
-    @BeforeMethod
+    @BeforeMethod (alwaysRun = true)
     public void setupTest() {
-        driver.get("https://www.drmartens.com/us/en/");
+        driver.get(getMainUrl());
 
         if (driver.findElement(By.xpath(confirmButtonLocator)).isDisplayed()) {
             driver.findElement(By.xpath(confirmButtonLocator)).click();

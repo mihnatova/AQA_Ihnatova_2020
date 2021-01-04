@@ -6,6 +6,12 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.InputStream;
+import java.util.Properties;
+
 import static org.apache.commons.lang3.SystemUtils.IS_OS_MAC;
 import static org.apache.commons.lang3.SystemUtils.IS_OS_WINDOWS;
 import static org.apache.commons.lang3.SystemUtils.IS_OS_LINUX;
@@ -13,7 +19,14 @@ import static org.apache.commons.lang3.SystemUtils.IS_OS_LINUX;
 @Listeners(TestListener.class)
 public abstract class BaseTest {
 
+    private static final String DEFAULT_ENV_PROPERTIES_FILE_PATH = "src/test/resources/test.properties";
     protected RemoteWebDriver driver = null;
+    private static Properties properties;
+
+    static {
+        properties = new Properties();
+        loadPropertiesFromFile(DEFAULT_ENV_PROPERTIES_FILE_PATH);
+    }
 
     @BeforeMethod(alwaysRun = true)
     public void setup() {
@@ -24,7 +37,7 @@ public abstract class BaseTest {
         }
         driver = new ChromeDriver();
 //        driver.manage().window().maximize();
-        System.out.println("setup");
+        driver.get(getMainUrl());
     }
 
     @AfterMethod(alwaysRun = true)
@@ -33,6 +46,22 @@ public abstract class BaseTest {
             driver.quit();
         }
         System.out.println("teardown");
+    }
+
+    protected String getMainUrl() {
+        String result = properties.getProperty("test.mainUrl");
+        return (result !=null) ? result.trim() : null;
+
+    }
+
+    private static void loadPropertiesFromFile(String propertiesFilePath) {
+        try {
+            InputStream propertiesStream;
+            propertiesStream = new FileInputStream(new File(propertiesFilePath).getPath());
+            properties.load(propertiesStream);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
 
