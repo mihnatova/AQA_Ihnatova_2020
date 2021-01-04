@@ -25,5 +25,4 @@ hs_err_pid*
 driver/
 target/
 .idea/
-**/src/test/resources/test.properties
-test.properties
+
