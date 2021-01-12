@@ -15,6 +15,7 @@ public class WorkBootsSectionPage extends Page{
         super(driver);
     }
 
+    //TODO methods below should return void and either shall redirect us/return value or return this class - e.g. return this;
     public void clickOnSlipResistantWorkBoots() {
         driver.findElement(By.xpath(slip1460ResistantLeatherLaceUpBootsButtonLocator)).click();
     }
