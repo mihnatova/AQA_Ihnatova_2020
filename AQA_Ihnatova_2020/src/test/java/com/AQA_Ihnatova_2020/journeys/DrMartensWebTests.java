@@ -78,6 +78,7 @@ public class DrMartensWebTests extends BaseTest {
         //When user clicks on the "WORK BOOTS" button
         workBootsSectionPage = homePage.navigateToWorkBootsSectionPage();
 
+        //TODO methods below can be chained after corresponding methods on the page will be amended
         //And user selects and clicks on “1460 SLIP RESISTANT LEATHER LACE UP BOOTS” button
         workBootsSectionPage.clickOnSlipResistantWorkBoots();
 

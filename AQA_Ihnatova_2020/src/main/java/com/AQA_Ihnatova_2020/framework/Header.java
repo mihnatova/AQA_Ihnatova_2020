@@ -19,7 +19,12 @@ public class Header {
         this.driver = driver;
     }
 
+<<<<<<< HEAD
     public NewSectionPage navigateToNewSectionPage() throws Exception {
+=======
+    //TODO if you're navigating to the specific page in the method then method name should reflect it, e.g. navigateToNewSectionPage(), please update all affected methods
+    public NewSectionPage navigateToNewSection() throws Exception {
+>>>>>>> 0967bd516036b054ae7e7432d97ca938ad906881
         driver.findElement(By.xpath(newButtonLocator)).click();
         return PageFactory.newPage(driver, NewSectionPage.class);
     }
