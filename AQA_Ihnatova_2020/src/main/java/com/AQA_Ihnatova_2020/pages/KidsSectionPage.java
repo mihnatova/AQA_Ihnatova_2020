@@ -1,5 +1,6 @@
 package com.AQA_Ihnatova_2020.pages;
 
+import com.AQA_Ihnatova_2020.framework.PageFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
@@ -13,8 +14,9 @@ public class KidsSectionPage extends Page {
         super(driver);
     }
 
-    public void clickOnToddlersBoots() {
+    public KidsSectionPage clickOnToddlersBoots() throws Exception {
         driver.findElement(By.xpath(youth1460PascalMetallicBootsButtonLocator)).click();
+        return PageFactory.newPage(driver, KidsSectionPage.class);
     }
 
     public boolean isTitleCorrect() {

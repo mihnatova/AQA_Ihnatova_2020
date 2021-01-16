@@ -41,7 +41,7 @@ public class DrMartensWebTests extends BaseTest {
         //Given user opens a browser and provides a valid url
 
         //When user clicks on the "WOMEN" button
-        womenSectionPage = homePage.navigateToWomenSection();
+        womenSectionPage = homePage.navigateToWomenSectionPage();
 
         //Then user is redirected to the page where the products are for women and sees the "PRODUCT COLLECTION" button
         Assert.assertTrue(womenSectionPage.isWomenCollectionDisplayed());
@@ -52,7 +52,7 @@ public class DrMartensWebTests extends BaseTest {
         //Given user opens a browser and provides a valid url
 
         //When user clicks on the "NEW" button
-        newSectionPage = homePage.navigateToNewSection();
+        newSectionPage = homePage.navigateToNewSectionPage();
 
         //Then user is redirected to the page where the new products are suggested and sees the "PRODUCT COLLECTION" button
         Assert.assertTrue(newSectionPage.isNewCollectionDisplayed());
@@ -62,7 +62,7 @@ public class DrMartensWebTests extends BaseTest {
         //Given user opens a browser and provides a valid url
 
         //When user clicks on the "KIDS" button
-        kidsSectionPage = homePage.navigateToKidsSection();
+        kidsSectionPage = homePage.navigateToKidsSectionPage();
 
         //And user selects and clicks on “TODDLER 1460 PASCAL METALLIC BOOTS” button
         kidsSectionPage.clickOnToddlersBoots();
@@ -76,7 +76,7 @@ public class DrMartensWebTests extends BaseTest {
         //Given user opens a browser and provides a valid url
 
         //When user clicks on the "WORK BOOTS" button
-        workBootsSectionPage = homePage.navigateToWorkBootsSection();
+        workBootsSectionPage = homePage.navigateToWorkBootsSectionPage();
 
         //And user selects and clicks on “1460 SLIP RESISTANT LEATHER LACE UP BOOTS” button
         workBootsSectionPage.clickOnSlipResistantWorkBoots();

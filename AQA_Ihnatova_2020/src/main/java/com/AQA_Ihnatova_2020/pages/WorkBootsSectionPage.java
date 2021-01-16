@@ -1,5 +1,6 @@
 package com.AQA_Ihnatova_2020.pages;
 
+import com.AQA_Ihnatova_2020.framework.PageFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
@@ -15,8 +16,9 @@ public class WorkBootsSectionPage extends Page{
         super(driver);
     }
 
-    public void clickOnSlipResistantWorkBoots() {
+    public WorkBootsSectionPage clickOnSlipResistantWorkBoots() throws Exception {
         driver.findElement(By.xpath(slip1460ResistantLeatherLaceUpBootsButtonLocator)).click();
+        return PageFactory.newPage(driver, WorkBootsSectionPage.class);
     }
 
     public void selectSize6() {

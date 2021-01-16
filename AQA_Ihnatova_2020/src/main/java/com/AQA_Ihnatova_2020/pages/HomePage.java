@@ -15,23 +15,23 @@ public class HomePage extends Page{
         this.header = new Header(driver);
     }
 
-    public NewSectionPage navigateToNewSection() throws Exception {
-       return header.navigateToNewSection();
+    public NewSectionPage navigateToNewSectionPage() throws Exception {
+       return header.navigateToNewSectionPage();
     }
 
-    public KidsSectionPage navigateToKidsSection() throws Exception {
-        return header.navigateToKidsSection();
+    public KidsSectionPage navigateToKidsSectionPage() throws Exception {
+        return header.navigateToKidsSectionPage();
     }
 
-    public WomenSectionPage navigateToWomenSection() throws Exception {
-        return header.navigateToWomenSection();
+    public WomenSectionPage navigateToWomenSectionPage() throws Exception {
+        return header.navigateToWomenSectionPage();
     }
 
     public boolean isWomenButtonDisplayed () {
         return driver.findElement(By.xpath(womenButtonLocator)).isDisplayed();
     }
 
-    public WorkBootsSectionPage navigateToWorkBootsSection() throws Exception {
-        return header.navigateToWorkBootsSection();
+    public WorkBootsSectionPage navigateToWorkBootsSectionPage() throws Exception {
+        return header.navigateToWorkBootsSectionPage();
     }
 }

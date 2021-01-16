@@ -19,22 +19,22 @@ public class Header {
         this.driver = driver;
     }
 
-    public NewSectionPage navigateToNewSection() throws Exception {
+    public NewSectionPage navigateToNewSectionPage() throws Exception {
         driver.findElement(By.xpath(newButtonLocator)).click();
         return PageFactory.newPage(driver, NewSectionPage.class);
     }
 
-    public KidsSectionPage navigateToKidsSection() throws Exception {
+    public KidsSectionPage navigateToKidsSectionPage() throws Exception {
         driver.findElement(By.xpath(kidsButtonLocator)).click();
         return PageFactory.newPage(driver, KidsSectionPage.class);
     }
 
-    public WomenSectionPage navigateToWomenSection() throws Exception {
+    public WomenSectionPage navigateToWomenSectionPage() throws Exception {
         driver.findElement(By.xpath(womenButtonLocator)).click();
         return PageFactory.newPage(driver, WomenSectionPage.class);
     }
 
-    public WorkBootsSectionPage navigateToWorkBootsSection() throws Exception {
+    public WorkBootsSectionPage navigateToWorkBootsSectionPage() throws Exception {
         driver.findElement(By.xpath(workBootsButtonLocator)).click();
         return PageFactory.newPage(driver, WorkBootsSectionPage.class);
     }
