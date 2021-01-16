@@ -18,7 +18,7 @@ public class Header {
     public Header(final RemoteWebDriver driver) {
         this.driver = driver;
     }
-    
+
     public NewSectionPage navigateToNewSectionPage() throws Exception {
         driver.findElement(By.xpath(newButtonLocator)).click();
         return PageFactory.newPage(driver, NewSectionPage.class);
