@@ -64,10 +64,10 @@ public class DrMartensWebTests extends BaseTest {
         //When user clicks on the "KIDS" button
         kidsSectionPage = homePage.navigateToKidsSectionPage();
 
-        //And user selects and clicks on “TODDLER 1460 PASCAL METALLIC BOOTS” button
+        //And user selects and clicks on “JUNIOR 1460 PASCAL METALLIC BOOTS” button
         kidsSectionPage.clickOnToddlersBoots();
 
-        //Then user is redirected to the page where the user can customize TODDLER 1460 PASCAL METALLIC BOOTS
+        //Then user is redirected to the page where the user can customize JUNIOR 1460 PASCAL METALLIC BOOTS
         Assert.assertTrue(kidsSectionPage.isTitleCorrect());
     }
 

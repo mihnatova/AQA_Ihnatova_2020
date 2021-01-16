@@ -6,20 +6,20 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class KidsSectionPage extends Page {
 
-    private String youth1460PascalMetallicBootsButtonLocator = "//a[@title='YOUTH 1460 PASCAL METALLIC BOOTS']";
-    private String youth1460PascalMetallicBootsSizeLocator = "//a[@data-sku-code='190665361643']";
-    private String kidsBootsSizeLocator = "6";
+    private String junior1460PascalMetallicBootsButtonLocator = "//a[@title='JUNIOR 1460 PASCAL METALLIC BOOTS']";
+    private String junior1460PascalMetallicBootsSizeLocator = "//a[@data-sku-code='190665361544']";
+    private String kidsBootsSizeLocator = "11";
 
     public KidsSectionPage(RemoteWebDriver driver) {
         super(driver);
     }
 
     public KidsSectionPage clickOnToddlersBoots() throws Exception {
-        driver.findElement(By.xpath(youth1460PascalMetallicBootsButtonLocator)).click();
+        driver.findElement(By.xpath(junior1460PascalMetallicBootsButtonLocator)).click();
         return PageFactory.newPage(driver, KidsSectionPage.class);
     }
 
     public boolean isTitleCorrect() {
-        return driver.findElement(By.xpath(youth1460PascalMetallicBootsSizeLocator)).getText().equals(kidsBootsSizeLocator);
+        return driver.findElement(By.xpath(junior1460PascalMetallicBootsSizeLocator)).getText().equals(kidsBootsSizeLocator);
     }
 }
