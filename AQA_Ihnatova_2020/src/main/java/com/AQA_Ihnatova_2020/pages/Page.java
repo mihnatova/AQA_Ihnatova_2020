@@ -10,7 +10,6 @@ public abstract class Page {
 
     public Page(final RemoteWebDriver driver) {
         this.driver = driver;
-        long timeOutInSeconds;
         this.wait = new WebDriverWait(driver, 30);
     }
 }

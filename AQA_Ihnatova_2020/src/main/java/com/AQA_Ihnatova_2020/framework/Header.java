@@ -1,9 +1,6 @@
 package com.AQA_Ihnatova_2020.framework;
 
-import com.AQA_Ihnatova_2020.pages.KidsSectionPage;
-import com.AQA_Ihnatova_2020.pages.NewSectionPage;
-import com.AQA_Ihnatova_2020.pages.WomenSectionPage;
-import com.AQA_Ihnatova_2020.pages.WorkBootsSectionPage;
+import com.AQA_Ihnatova_2020.pages.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
@@ -38,4 +35,5 @@ public class Header {
         driver.findElement(By.xpath(workBootsButtonLocator)).click();
         return PageFactory.newPage(driver, WorkBootsSectionPage.class);
     }
+
 }
