@@ -2,7 +2,9 @@ package com.AQA_Ihnatova_2020;
 
 import com.AQA_Ihnatova_2020.listeners.TestListener;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
@@ -28,16 +30,35 @@ public abstract class BaseTest {
         loadPropertiesFromFile(DEFAULT_ENV_PROPERTIES_FILE_PATH);
     }
 
+    protected WebDriverWait wait;
+
     @BeforeMethod(alwaysRun = true)
     public void setup() {
         if (IS_OS_MAC || IS_OS_LINUX) {
-            System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
+            if (getBrowser().equals("chrome")) {
+                System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
+                driver = new ChromeDriver();
+                this.wait = new WebDriverWait(driver, Integer.parseInt(getTimeouts()));
+                //driver.manage().window().maximize();
+            } else if (getBrowser().equals("firefox")) {
+                System.setProperty("webdriver.firefox.driver", "drivers/geckodriver");
+                driver = new FirefoxDriver();
+                this.wait = new WebDriverWait(driver, Integer.parseInt(getTimeouts()));
+            }
         } else if (IS_OS_WINDOWS) {
-            System.setProperty("webdriver.chrome.driver", "drivers//chromedriver.exe");
+            if (getBrowser().equals("chrome")) {
+                System.setProperty("webdriver.chrome.driver", "drivers//chromedriver.exe");
+                driver = new ChromeDriver();
+                this.wait = new WebDriverWait(driver, Integer.parseInt(getTimeouts()));
+                //driver.manage().window().maximize();
+            } else if (getBrowser().equals("firefox")) {
+                System.setProperty("webdriver.firefox.driver", "drivers/geckodriver.exe");
+                driver = new FirefoxDriver();
+                this.wait = new WebDriverWait(driver, Integer.parseInt(getTimeouts()));
+            }
         }
-        driver = new ChromeDriver();
-//        driver.manage().window().maximize();
-        driver.get(getMainUrl());
+        //pageNavigator = new PageNavigator(driver, getMainUrl());
+        //driver.get(getMainUrl());
     }
 
     @AfterMethod(alwaysRun = true)
@@ -48,10 +69,27 @@ public abstract class BaseTest {
         System.out.println("teardown");
     }
 
-    protected String getMainUrl() {
-        String result = properties.getProperty("test.mainUrl");
-        return (result !=null) ? result.trim() : null;
+    protected String getBrowser() {
+        return getProperty("test.browser");
+    }
 
+    protected String getTimeouts() {
+        return getProperty("test.timeout");
+    }
+
+    protected String getProperty(String key) {
+        String result = properties.getProperty(key);
+        return (result != null) ? result.trim() : null;
+    }
+
+    protected String getMainUrl() {
+        String result;
+        if (getProperty("test.isLocal").equals("true")) {
+            result = properties.getProperty("test.MainUrl");
+        } else {
+            result = properties.getProperty("test.qaUrl");
+        }
+        return (result != null) ? result.trim() : null;
     }
 
     private static void loadPropertiesFromFile(String propertiesFilePath) {
