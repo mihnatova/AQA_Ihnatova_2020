@@ -5,30 +5,24 @@ import com.AQA_Ihnatova_2020.listeners.TestListener;
 import com.AQA_Ihnatova_2020.pages.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.*;
 
 @Listeners(TestListener.class)
 public class FinalAssignmentTests extends BaseTest {
 
     private String acceptCookiesButtonLocator = "//input[@id='sp-cc-accept']";
-    private String searchFieldLocator = "//input[@id='twotabsearchtextbox']";
-    private String searchButtonLocator = "//span[@id='nav-search-submit-text']";
-    private String searchTerm = "go pro 4k";
     private String searchTermLocator = "//*[@class='a-color-state a-text-bold']";
-    private String avgCustomerReview4PlusStarsButtonLocator = "//*[@class='a-icon a-icon-star-medium a-star-medium-4']";
-    private String searchMinPriceFieldLocator = "//input[@id='low-price']";
-    private String searchMinPriceValue = "100";
-    private String searchMinPriceButtonLocator = "//span[@id='a-autoid-1']";
     private String allTopMenuButtonLocator = "//select[@id='searchDropdownBox']";
-    private String searchTermPC = "PC";
     private String all33DepartmentsButtonLocator = "//span[contains(text(),'See All 33 Departments')]";
     private String computerAndAccessoriesButtonLocator = "//span[contains(text(),'Computers & Accessories')]";
     private String monitorsButtonLocator = "//span[contains(text(),'Monitors')]";
     private String seeMoreButtonLocator = "/html/body/div[1]/div[2]/div[2]/div[1]/div[2]/div[2]/div[1]/a/span";
     private AmazonHomePage amazonHomePage;
     private AmazonNewReleasesPage amazonNewReleasesPage;
-    private String newReleasesButtonLocator = "//header/div[@id='navbar']/div[@id='nav-main']/div[2]/div[2]/div[1]/a[4]";
     private AmazonGiftIdeasPage amazonGiftIdeasPage;
+    private AmazonAllSectionPage amazonAllSectionPage;
+    private AmazonSearchResultsPage amazonSearchResultsPage;
 
 
     @BeforeMethod(alwaysRun = true)
@@ -41,6 +35,8 @@ public class FinalAssignmentTests extends BaseTest {
         amazonHomePage = new AmazonHomePage(driver);
         amazonNewReleasesPage = new AmazonNewReleasesPage(driver);
         amazonGiftIdeasPage = new AmazonGiftIdeasPage(driver);
+        amazonAllSectionPage = new AmazonAllSectionPage(driver);
+        amazonSearchResultsPage = new AmazonSearchResultsPage(driver);
     }
 
     @Test(groups = "main", suiteName = "Ultimate", priority = 0)
@@ -52,7 +48,7 @@ public class FinalAssignmentTests extends BaseTest {
         this.wait = new WebDriverWait(driver, 15);
 
         //From the menu selects “New Releases”
-        driver.findElement(By.xpath(newReleasesButtonLocator)).click();
+        amazonAllSectionPage.clickOnNewReleasesLeftBarButton();
 
         //Verifies that ALL titles of the sections presented on the page are existing in the left List of links
         //Assert.assertTrue(driver.findElement(By.xpath("//button[@id='addToCartButton']")).isDisplayed());
@@ -78,19 +74,17 @@ public class FinalAssignmentTests extends BaseTest {
     public void secondUrlTest() throws Exception {
         //Given user opens a browser and provides a valid url
 
-        //From the home page searches for “go pro 4k” via search field=
-        driver.findElement(By.xpath(searchFieldLocator)).sendKeys(searchTerm);
-        driver.findElement(By.xpath(searchButtonLocator)).click();
+        //From the home page searches for “go pro 4k” via search field
+        amazonHomePage.setSearchTerm().searchSearchTerm();
 
         //On the “Search results” page selects Avg. Customer Review 4+ stars from the left section
-        driver.findElement(By.xpath(avgCustomerReview4PlusStarsButtonLocator)).click();
+        amazonSearchResultsPage.selectFourPlusCustomerReviewRating();
 
         //On the “Search results” page sets min price as 100 and apply changes
-        driver.findElement(By.xpath(searchMinPriceFieldLocator)).sendKeys(searchMinPriceValue);
-        driver.findElement(By.xpath(searchMinPriceButtonLocator));
+        amazonSearchResultsPage.setMinimalPrice().submitPrice();
 
         //Verifies that all updated results (except Limited deals one) have an average rating 4+ and item price is higher than 100
-
+        Assert.assertTrue(AmazonSearchResultsPage.isExpectedConditionsMet(), "Expected conditions were not met!");
     }
 
     @Test(groups = "main", suiteName = "Ultimate", priority = 1)
@@ -98,8 +92,7 @@ public class FinalAssignmentTests extends BaseTest {
         //Given user opens a browser and provides a valid url
 
         //From the home page clicks on link “PC” from the Top menu
-        driver.findElement(By.xpath(searchFieldLocator)).sendKeys(searchTermPC);
-        driver.findElement(By.xpath(searchButtonLocator)).click();
+        amazonHomePage.setSearchTermPC().searchSearchTerm();
 
         //on “Computers & Accessories” page clicks on “Monitors”
         driver.findElement(By.xpath(all33DepartmentsButtonLocator)).click();
@@ -119,8 +112,7 @@ public class FinalAssignmentTests extends BaseTest {
         //Given user opens a browser and provides a valid url
 
         //From the home page clicks on link “PC” from the Top menu
-        driver.findElement(By.xpath(searchFieldLocator)).sendKeys(searchTermPC);
-        driver.findElement(By.xpath(searchButtonLocator)).click();
+        amazonHomePage.setSearchTermPC().searchSearchTerm();
 
         //On “Computers & Accessories” page clicks on “Tablets”
 
